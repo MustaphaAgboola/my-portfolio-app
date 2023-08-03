@@ -11,24 +11,24 @@ const projects = [
     image: project1,
     title: "Weather App",
     description:
-      "This is a weather app that shows the weather condition of any city in the world",
+      "This is a weather app that shows the weather condition of any city.",
   },
   {
     image: project2,
     title: "E-commerce App",
     description:
-      "This is an e-commerce app that allows users to buy and sell products",
+      "This is an e-commerce app that allows users to buy and sell products.",
   },
   {
     image: project3,
     title: "Image Generator",
     description:
-      "This is an image generator app that allows users to generate images",
+      "This is an image generator app that allows users to generate images.",
   },
   {
     image: project4,
     title: "Todo App",
-    description: "This is a todo app that allows users to create a todo list",
+    description: "This is a todo app that allows users to create a todo list.",
   },
 ];
 
@@ -72,8 +72,8 @@ const Projects = () => {
                   <p>View code</p>
                 </div>
                 <div className=" flex gap-2">
-                  <p>View project</p>
                   <LinkOutlined />
+                  <p>View project</p>
                 </div>
               </div>
 

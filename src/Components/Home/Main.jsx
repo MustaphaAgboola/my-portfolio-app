@@ -35,7 +35,7 @@ const Main = () => {
         />
       </div>
 
-      <div className=" w-[28rem] mt-10 ml-4 md:w-[22rem] md:ml-1">
+      <div className=" w-[28rem] mt-10 mb-4 ml-4 md:w-[22rem] md:ml-1">
         <h3 className=" text-center text-yellow-400 tracking-widest">
           INTRODUCTION.
         </h3>

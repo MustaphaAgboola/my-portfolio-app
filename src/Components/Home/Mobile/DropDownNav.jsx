@@ -142,6 +142,7 @@ import {
   LinkedinFilled,
 } from "@ant-design/icons";
 import { Menu } from "antd";
+import { Link } from "react-router-dom";
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -160,9 +161,24 @@ const items = [
     getItem("BLOGS", "6"),
     getItem("Contact", "sub3", null, [
       getItem("E-MAIL", "7", <MailFilled />),
-      getItem("TWITTER", "8", <TwitterOutlined />),
-      getItem("GITHUB", "9", <GithubOutlined />),
-      getItem("LINKEDIN", "10", <LinkedinFilled />),
+      getItem(
+        "TWITTER",
+        "8",
+        <Link to="https://twitter.com/6lackcoder">
+          <TwitterOutlined />
+        </Link>
+      ),
+      getItem(
+        "GITHUB",
+        "9",
+        <Link to="https://github.com/MustaphaAgboola">
+          <GithubOutlined />
+        </Link>
+      ),
+      getItem("LINKEDIN", "10",
+      <Link to="https://www.linkedin.com/in/tapha69/">
+       <LinkedinFilled />
+       </Link>),
     ]),
   ]),
 ];
