@@ -18,13 +18,12 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="flex justify-between px-4 py-8 md:px-12">
+    <div className="flex justify-between  px-1 py-8 md:px-12 md:justify-between">
       <div>
         <h1 className=" text-4xl font-extrabold ">
           TAPHA<span className=" text-2xl text-yellow-400 md:text-5xl">.</span>
         </h1>
       </div>
-
 
       {isMobile ? <DropDownNav /> : <Navigation />}
     </div>
