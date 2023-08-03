@@ -164,19 +164,19 @@ const items = [
       getItem(
         "TWITTER",
         "8",
-        <Link to="https://twitter.com/6lackcoder">
+        <Link to="https://twitter.com/6lackcoder" target="_blank">
           <TwitterOutlined />
         </Link>
       ),
       getItem(
         "GITHUB",
         "9",
-        <Link to="https://github.com/MustaphaAgboola">
+        <Link to="https://github.com/MustaphaAgboola" target="_blank">
           <GithubOutlined />
         </Link>
       ),
       getItem("LINKEDIN", "10",
-      <Link to="https://www.linkedin.com/in/tapha69/">
+      <Link to="https://www.linkedin.com/in/tapha69/" target="_blank">
        <LinkedinFilled />
        </Link>),
     ]),

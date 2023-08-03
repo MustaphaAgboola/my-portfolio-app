@@ -13,13 +13,13 @@ const Contact = () => {
       <li>Contacts</li>
       <div className="w-[2px] h-6 bg-yellow-400 "></div>
       <div className="flex gap-2">
-        <Link to="https://twitter.com/6lackcoder">
+        <Link  to="https://twitter.com/6lackcoder" target='_blank'>
           <TwitterOutlined />
         </Link>
-        <Link to="https://github.com/MustaphaAgboola">
+        <Link to="https://github.com/MustaphaAgboola" target='_blank'>
           <GithubOutlined />
         </Link>
-        <Link to="https://www.linkedin.com/in/tapha69/">
+        <Link to="https://www.linkedin.com/in/tapha69/" target='_blank'>
           <LinkedinFilled />
         </Link>
 
