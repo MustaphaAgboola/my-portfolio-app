@@ -5,6 +5,8 @@ import project3 from "../../assets/images/project3.png";
 import project4 from "../../assets/images/project4.png";
 import { motion } from "framer-motion";
 import { GithubOutlined, LinkOutlined  } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 const projects = [
   {
@@ -12,23 +14,27 @@ const projects = [
     title: "Weather App",
     description:
       "This is a weather app that shows the weather condition of any city.",
+    viewCode: "https://github.com/MustaphaAgboola/weather-app",
   },
   {
     image: project2,
     title: "E-commerce App",
     description:
       "This is an e-commerce app that allows users to buy and sell products.",
+    viewCode: "https://github.com/MustaphaAgboola/e-commerce",
   },
   {
     image: project3,
     title: "Image Generator",
     description:
       "This is an image generator app that allows users to generate images.",
+    viewCode: "https://github.com/MustaphaAgboola/image_generator",
   },
   {
     image: project4,
     title: "Todo App",
     description: "This is a todo app that allows users to create a todo list.",
+    viewCode: ""
   },
 ];
 
@@ -67,10 +73,12 @@ const Projects = () => {
                 {project.description}
               </p>
               <div className=" flex justify-between mt-4">
+                  <Link to={project.viewCode}>
                 <div className=" flex gap-2">
-                  <GithubOutlined />
-                  <p>View code</p>
+                    <GithubOutlined />
+                    <p>View code</p>
                 </div>
+                  </Link>
                 <div className=" flex gap-2">
                   <LinkOutlined />
                   <p>View project</p>
@@ -86,6 +94,8 @@ const Projects = () => {
         NOTE: "Although I'm still working on it, there are still some aspects of
         the project's functionality that are not yet working."
       </p>
+
+      <ContactForm />
     </>
   );
 };

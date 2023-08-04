@@ -25,8 +25,8 @@ const Navigation = () => {
         </div>
         <Routes>
           <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={Aboutme} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/about" component={<Aboutme/>} />
+          <Route path="/projects" component={<Projects/>} />
           {/* <Route component={NotFoundPage} />{" "} */}
           {/* This route catches any unknown URLs */}
         </Routes>
