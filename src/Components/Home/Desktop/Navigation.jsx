@@ -1,10 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { NavLink, Route, Routes } from 'react-router-dom';
-import HomePage from '../HomePage';
-import Aboutme from '../Aboutme';
-import Projects from '../Projects';
-import Contact from '../Contact';
+import { Link, NavLink } from "react-router-dom";
+import Contact from "../Contact";
 
 const Navigation = () => {
   return (
@@ -12,29 +9,22 @@ const Navigation = () => {
       <ul className=" flex justify-evenly gap-2 font-semibold lg:gap-6">
         <div className=" block gap-4 lg:flex">
           <li>
-            <NavLink exact to="/">
+            <NavLink exact to="/#head">
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about">ABOUT</NavLink>
+            <Link to="/aboutme.jsx">ABOUT</Link>
           </li>
           <li>
-            <NavLink to="/projects">PROJECTS</NavLink>
+            <Link to="">PROJECTS</Link>
           </li>
         </div>
-        <Routes>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={<Aboutme/>} />
-          <Route path="/projects" component={<Projects/>} />
-          {/* <Route component={NotFoundPage} />{" "} */}
-          {/* This route catches any unknown URLs */}
-        </Routes>
 
         <Contact />
       </ul>
     </div>
   );
-}
+};
 
-export default Navigation
+export default Navigation;

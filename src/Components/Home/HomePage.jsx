@@ -10,8 +10,6 @@ import  Footer  from "./Footer";
 
 const HomePage = () => {
 
-
-
   return (
     <div className=" text-gray-400 ">
       <div className=" bg-gray-800">
