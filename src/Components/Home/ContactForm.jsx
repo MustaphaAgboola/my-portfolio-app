@@ -1,5 +1,5 @@
 import { message } from "antd";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
  const ContactForm = () => {
@@ -54,7 +54,7 @@ import emailjs from "emailjs-com";
         Connect with me
       </h1>
       <form
-        className=" w-[22rem] mx-2 md:w-[25rem] md:mx-auto lg:w-[30rem]"
+        className=" w-[20rem] mx-2 md:w-[25rem] md:mx-auto lg:w-[30rem]"
         onSubmit={sendMail}
         id="contact-form"
       >
