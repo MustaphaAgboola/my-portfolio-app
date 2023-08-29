@@ -4,7 +4,7 @@ import project2 from "../../assets/images/project2.png";
 import project3 from "../../assets/images/project3.png";
 import project4 from "../../assets/images/project4.png";
 import { motion } from "framer-motion";
-import { GithubOutlined, LinkOutlined  } from "@ant-design/icons";
+import { GithubOutlined, LinkOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import ContactForm from "./ContactForm";
 
@@ -15,6 +15,7 @@ const projects = [
     description:
       "This is a weather app that shows the weather condition of any city.",
     viewCode: "https://github.com/MustaphaAgboola/weather-app",
+    viewProject: "https://heartfelt-tiramisu-1ab490.netlify.app/",
   },
   {
     image: project2,
@@ -22,6 +23,7 @@ const projects = [
     description:
       "This is an e-commerce app that allows users to buy and sell products.",
     viewCode: "https://github.com/MustaphaAgboola/e-commerce",
+    viewProject: "https://soft-cobbler-f40af2.netlify.app/",
   },
   {
     image: project3,
@@ -29,12 +31,13 @@ const projects = [
     description:
       "This is an image generator app that allows users to generate images.",
     viewCode: "https://github.com/MustaphaAgboola/image_generator",
+    viewProject: "https://soft-sprite-aa39ce.netlify.app/",
   },
   {
     image: project4,
     title: "Todo App",
     description: "This is a todo app that allows users to create a todo list.",
-    viewCode: ""
+    viewCode: "",
   },
 ];
 
@@ -73,16 +76,19 @@ const Projects = () => {
                 {project.description}
               </p>
               <div className=" flex justify-between mt-4">
-                  <Link to={project.viewCode}>
-                <div className=" flex gap-2">
+                <Link to={project.viewCode}>
+                  <div className=" flex gap-2 items-center">
                     <GithubOutlined />
                     <p>View code</p>
-                </div>
-                  </Link>
-                <div className=" flex gap-2">
-                  <LinkOutlined />
-                  <p>View project</p>
-                </div>
+                  </div>
+                </Link>
+
+                <Link to={project.viewProject}>
+                  <div className=" flex gap-2 items-center">
+                    <LinkOutlined />
+                    <p>View project</p>
+                  </div>
+                </Link>
               </div>
 
               {isToggled && <p></p>}
