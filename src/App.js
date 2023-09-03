@@ -4,7 +4,6 @@ import HomePage from "./Components/Home/HomePage";
 import Aboutme from "./Components/Home/Aboutme";
 import Projects from "./Components/Home/Projects";
 import ContactForm from "./Components/Home/ContactForm";
-import { Divider } from "antd";
 
 function App() {
   return (

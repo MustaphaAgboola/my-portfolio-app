@@ -155,22 +155,25 @@ function getItem(label, key, icon, children, type) {
 }
 const items = [
   getItem(null, "sub2", <MenuOutlined />, [
-    getItem("HOME", "5"),
-    getItem("ABOUT", "6"),
-    getItem("PORTFOLIO", "6"),
-    getItem("BLOGS", "6"),
+    getItem(<Link to='/'>HOME
+    </Link>, "5"),
+    getItem(<Link to='/about'>ABOUT
+    </Link>, "6"),
+    getItem(<Link to='/project'>PROJECTS
+    </Link>, "7"),
     getItem("Contact", "sub3", null, [
-      getItem("E-MAIL", "7", <MailFilled />),
+      getItem(<Link to='/contactForm'>E-MAIL
+      </Link>, "9", <MailFilled />),
       getItem(
         "TWITTER",
-        "8",
+        "10",
         <Link to="https://twitter.com/6lackcoder" target="_blank">
           <TwitterOutlined />
         </Link>
       ),
       getItem(
         "GITHUB",
-        "9",
+        "11",
         <Link to="https://github.com/MustaphaAgboola" target="_blank">
           <GithubOutlined />
         </Link>

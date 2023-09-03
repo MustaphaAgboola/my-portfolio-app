@@ -58,7 +58,7 @@ import emailjs from "emailjs-com";
         Connect with me
       </h1>
       <form
-        className=" w-[20rem] mx-2 md:w-[25rem] md:mx-auto lg:w-[30rem]"
+        className=" w-[95%] sm:w-[20rem] mx-2 md:w-[25rem] md:mx-auto lg:w-[30rem]"
         onSubmit={sendMail}
         id="contactForm"
         ref={formRef}
