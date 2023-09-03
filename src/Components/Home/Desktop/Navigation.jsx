@@ -14,10 +14,10 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <Link to="/aboutme.jsx">ABOUT</Link>
+            <Link to="/about">ABOUT</Link>
           </li>
           <li>
-            <Link to="">PROJECTS</Link>
+            <Link to="/project">PROJECTS</Link>
           </li>
         </div>
 

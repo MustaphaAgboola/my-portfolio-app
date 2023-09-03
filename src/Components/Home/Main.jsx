@@ -13,8 +13,23 @@ const Main = () => {
 
         <div className="w-28 h-[2px] bg-yellow-400 "></div>
 
-        <p className=" font-bold text-xl">Full-stack Developer </p>
+        <p className=" font-bold text-xl">
+          DevOps <span className=" text-yellow-400"> &</span> Full-Stack
+          Engineer{" "}
+        </p>
         <div className=" flex flex-wrap gap-1">
+          <p className="">CI/CD</p>
+          <span className="w-[2px] h-6 bg-yellow-400 "></span>
+          <p className="">IaC with TERRAFORM</p>
+          <span className="w-[2px] h-6 bg-yellow-400 "></span>
+          <p className="">Configuration Management (ANSIBLE)</p>
+          <span className="w-[2px] h-6 bg-yellow-400 "></span>
+          <p className="">Cloud Platform (AWS)</p>
+          <span className="w-[2px] h-6 bg-yellow-400 "></span>
+          <p className="">Docker</p>
+          <span className="w-[2px] h-6 bg-yellow-400 "></span>
+          <p className="">Kubernetes</p>
+          <span className="w-[2px] h-6 bg-yellow-400 "></span>
           <p className="">REACTJS</p>
           <span className="w-[2px] h-6 bg-yellow-400 "></span>
           <p>NODEJS</p>
@@ -41,11 +56,14 @@ const Main = () => {
         </h3>
         <p>
           "Hello! I'm <span className=" text-yellow-400">MUSTAPHA</span>, a
-          junior full stack developer, passionate about crafting seamless user
-          experiences and exploring the endless possibilities of code. Eager to
-          learn, collaborate, and make a positive impact in the tech community,
-          I'm always excited to contributing my skills to the ever-evolving
-          world of full stack development. Let's{" "}
+          junior DevOps engineer and full stack developer, passionate about
+          crafting seamless user experiences, streamlining development and
+          operation process, setting up robust CI/CD pipeline, ensure that
+          application runs smoothly in production and exploring the endless
+          possibilities of code. Eager to learn, collaborate, and make a
+          positive impact in the tech community, I'm always excited to
+          contributing my skills to the ever-evolving world of
+          software-engineering. Let's{" "}
           <span className=" text-yellow-400">code</span>, create, and make a
           difference together!" 🚀
         </p>
